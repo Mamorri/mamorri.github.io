@@ -3,9 +3,9 @@
   const typed = document.querySelector('.typed');
 
   const additionalStrings = [
-    'UX Designer',
-	'Software Engineer',
-    'CSUS Senior',
+  'Software Engineer',
+   'UX Designer',
+    'CSUS Honor Roll',
   ];
   const lastLoadedTime = parseInt(localStorage.getItem('lastLoaded'), 10) || 0;
   const lastLoaded = new Date(lastLoadedTime);
