@@ -4,8 +4,9 @@
 
   const additionalStrings = [
   'Software Engineer',
-   'UX Designer',
-    'CSUS Honor Roll',
+   'Q.A. Specialist',
+    'UX Designer',
+    
   ];
   const lastLoadedTime = parseInt(localStorage.getItem('lastLoaded'), 10) || 0;
   const lastLoaded = new Date(lastLoadedTime);
