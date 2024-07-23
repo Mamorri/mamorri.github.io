@@ -1,0 +1,487 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="https://mamorri.github.io/assets/img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" type="image/x-icon" href="https://mamorri.github.io/assets/img/favicon.ico" />
+<link rel="mask-icon" type="" href="https://mamorri.github.io/assets/img/favicon.ico"/>
+<title>MM Portfolio</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+<style>
+    .clear:before, .clear:after {
+  content: ' ';
+  display: table; }
+
+.clear {
+  *zoom: 1; }
+  .clear:after {
+    clear: both; }
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+body {
+  font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 10%; }
+
+/* Make the body 100% of the browser viewport height */
+html, body {
+  height: 100%;
+  margin: 0; }
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+  font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-weight: 700; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* =Header */
+.header-container {
+  text-align: center;
+  color: #ffffff;
+  background: #512c62;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #512c62), color-stop(100%, #313372));
+  background: -webkit-linear-gradient(top, #512c62 0%, #313372 100%);
+  background: linear-gradient(to bottom, #512c62 0%, #313372 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#512c62', endColorstr='#313372', GradientType=0 ); }
+  .header-container .wrapper {
+    padding-top: 120px;
+    z-index: 2; }
+  .header-container:before {
+    content: 'M';
+    display: block;
+    font-size: 30em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.05);
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif; }
+
+/* =Navigation */
+nav {
+  display: none;
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: right;
+  z-index: 100; }
+  nav a {
+    display: block;
+    line-height: 25px;
+    position: relative;
+    padding-right: 20px;
+    color: #ffffff;
+    text-decoration: none; }
+    nav a:hover .nav-label {
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+      visibility: visible; }
+  nav .nav-dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all 0.3s linear;
+            transition: all 0.3s linear; }
+  nav .nav-label {
+    display: block;
+    opacity: 0.5;
+    visibility: hidden;
+    -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+            transform: translateX(-10px);
+    -webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
+            transition: all 0.2s cubic-bezier(.17, .67, .83, .67); }
+  nav.is-dark a {
+    color: #212121; }
+  nav.is-dark .nav-dot {
+    background-color: rgba(0, 0, 0, 0.5); }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+  nav li {
+    width: auto;
+    list-style: none; }
+
+.scroll-hint {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+/* =Main */
+p {
+  font-size: 20px; }
+
+.fs {
+  height: 100vh; }
+
+.slide {
+  color: #ffffff;
+  position: relative; }
+  .slide .wrapper {
+    padding-top: 120px;
+    text-align: center; }
+  .slide#slide01 {
+    background: #607d4a;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #607d4a), color-stop(100%, #1a1e1f));
+    background: -webkit-linear-gradient(top, #607d4a 0%, #1a1e1f 100%);
+    background: linear-gradient(to bottom, #607d4a 0%, #1a1e1f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#607d4a', endColorstr='#1a1e1f', GradientType=0 ); }
+  .slide#slide02 {
+    background: #723161;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #723161), color-stop(100%, #632c2d));
+    background: -webkit-linear-gradient(top, #723161 0%, #632c2d 100%);
+    background: linear-gradient(to bottom, #723161 0%, #632c2d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#723161', endColorstr='#632c2d', GradientType=0 ); }
+  .slide#slide03 {
+    color: #212121;
+    background: #f5ae55;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #e6e9ed), color-stop(100%, #c13b3b));
+    background: -webkit-linear-gradient(top, #f5ae55 50%, #c13b3b 100%);
+    background: linear-gradient(to bottom, #f5ae55 50%, #c13b3b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e9ed', endColorstr='#ffffff', GradientType=0 ); }
+    .slide#slide03 .button {
+      border-color: rgba(0, 0, 0, 0.7);
+      color: #212121; }
+      .slide#slide03 .button:hover {
+        border-color: #212121;
+        background-color: #212121;
+        color: #ffffff; }
+  .slide#slide04 {
+    background: #31725f;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #31725f), color-stop(100%, #2c4c63));
+    background: -webkit-linear-gradient(top, #31725f 0%, #2c4c63 100%);
+    background: linear-gradient(to bottom, #31725f 0%, #2c4c63 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31725f', endColorstr='#2c4c63', GradientType=0 ); }
+  .slide#slide05 {
+    background: #a2e6d2;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #a2e6d2), color-stop(100%, #96458c));
+    background: -webkit-linear-gradient(top, #a2e6d2 0%, #96458c 100%);
+    background: linear-gradient(to bottom, #a2e6d2 0%, #96458c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2e6d2', endColorstr='#96458c', GradientType=0 ); }
+  .slide#slide06 {
+    background: #723161;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #723161), color-stop(100%, #632c2d));
+    background: -webkit-linear-gradient(top, #723161 0%, #632c2d 100%);
+    background: linear-gradient(to bottom, #723161 0%, #632c2d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#723161', endColorstr='#632c2d', GradientType=0 ); }
+
+.button {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px rgba(255, 255, 255, 0.7) solid;
+  padding: 8px 15px;
+  margin-top: 15px;
+  display: inline-block;
+  position: relative; }
+  .button:hover {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000; }
+
+/* =Footer */
+.footer-container {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.1); }
+  .footer-container h3 {
+    margin: 0;
+    padding: 20px 0;
+    font-weight: normal; }
+  .footer-container a {
+    color: rgba(0, 0, 0, 0.9); }
+
+/* =Simple animation up */
+.no-touch .slideInUp {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-out;
+          transition: all 0.7s ease-out;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0); }
+.no-touch .is-active .slideInUp {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+   
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em; }
+  /* =Header */
+  .header-container .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0; }
+  .header-container:before {
+    font-size: 70em; }
+  .slide section {
+    max-width: 400px; }
+  .slide .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: left; }
+  nav {
+    display: block; } }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+  </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+
+<div id="intro" class="header-container fs">
+<header class="wrapper">
+<h1 class="title">Michael Morrison</h1>
+<p>Custom collection of Michael Morrison's work on various sites of professional, personal, and academic nature. Page Built in a Scrollmagic framework with GSAP animation.</p>
+<!--<p>(Build Under Construction)</p>-->
+</header>
+<span class="scroll-hint">Scroll Down</span>
+</div>
+<nav>
+<ul>
+<li><a href="#intro"><span class="nav-dot"></span><span class="nav-label">Intro</span></a></li>
+<li><a href="#slide03"><span class="nav-dot"></span><span class="nav-label">SMUD "Why TOD?"</span></a></li>
+<li><a href="#slide04"><span class="nav-dot"></span><span class="nav-label">California Mobility Center</span></a></li>
+<li><a href="#slide06"><span class="nav-dot"></span><span class="nav-label">Inspired CRM</span></a></li>
+<li><a href="#slide05"><span class="nav-dot"></span><span class="nav-label">Sacramento Power Academy</span></a></li>
+<li><a href="#slide01"><span class="nav-dot"></span><span class="nav-label">AP Driving School</span></a></li>
+<li><a href="#slide02"><span class="nav-dot"></span><span class="nav-label">Visual Encyclopedia</span></a></li>
+
+
+</ul>
+</nav>
+<div class="main-container">
+
+<article id="slide03" class="slide is-light fs">
+	<div class="wrapper">
+		<header>
+			<h1 class="slideInUp">SMUD "Why TOD?" Experience</h1>
+		</header>
+		<section>
+			<h2 class="slideInUp">Professional - (Spring 2019)</h2>
+			<p class="slideInUp">Interactive scrolling experience site to accompany SMUD's switch to TOD rates. Built with: Scrollmagic, GSAP TweenMax, JQuery.</p>
+			<p class="slideInUp">
+			<a href="https://www.smud.org/whytod" class="button">View Site</a>
+			</p>
+		</section>
+	</div> 
+</article>
+
+<article id="slide04" class="slide is-light fs">
+	<div class="wrapper">
+		<header>
+			<h1 class="slideInUp">California Mobility Center</h1>
+		</header>
+		<section>
+			<h2 class="slideInUp">Professional - (Spring 2019)</h2>
+			<p class="slideInUp">Archived build of full CMC Homepage with completed Chinese localization. Current reduced build hosted:&nbsp;<a href="http://californiamobilitycenter.org/">HERE</a>  </p>
+			<p class="slideInUp">
+			<a href="" class="button">Coming Soon</a>
+			</p>
+		</section>
+	</div> 
+</article>
+
+<article id="slide06" class="slide is-light fs">
+	<div class="wrapper">
+		<header>
+			<h1 class="slideInUp">Inspired CRM</h1>
+		</header>
+		<section>
+			<h2 class="slideInUp">Academic - 2019</h2>
+			<p class="slideInUp">Fully implemented MERN Stack CRM Web App for insurance management, sales, and statistics. Featuring administrative hierarchy, networking tools, adn account management. Co-developers: CSUS TSG Team    </p>
+			<p class="slideInUp">
+			<a href="https://tsg-crm.herokuapp.com/" class="button">View Site</a>
+			</p>
+		</section>
+	</div> 
+</article>
+
+<article id="slide05" class="slide is-light fs">
+	<div class="wrapper">
+		<header>
+			<h1 class="slideInUp">Sacramento Power Academy</h1>
+		</header>
+		<section>
+			<h2 class="slideInUp">Professional - (Fall 2019)</h2>
+			<p class="slideInUp">SPA homepage for program, course, and mission statement visualization.   </p>
+			<p class="slideInUp">
+			<a href="http://sacramentopoweracademy.com/" class="button">View Site</a>
+			</p>
+		</section>
+	</div> 
+</article>
+
+<article id="slide01" class="slide fs">
+<div class="wrapper">
+<header>
+<h1 class="slideInUp">AP Driving School</h1>
+</header>
+<section>
+<h2 class="slideInUp">Academic - (Fall 2017)</h2>
+<p class="slideInUp">Custom Template for a Driving School site launch implementation. Co-developer: Tri Vo</p>
+<p class="slideInUp">
+<a href="https://mamorri.github.io/sites/MST/drivingschool/registration.html" class="button">View Site</a>
+</p>
+</section>
+</div> 
+</article>
+
+<article id="slide02" class="slide fs">
+<div class="wrapper">
+<header>
+<h1 class="slideInUp">Interactive Visual Encyclopedia</h1>
+</header>
+<section>
+<h2 class="slideInUp">Academic - (Fall 2017)</h2>
+<p class="slideInUp">Proof of concept for a detailed imagemap character/item encyclopedic site with custom tooltips. (Responsive UI Deprecated)</p>
+<p class="slideInUp">
+<a href="https://mamorri.github.io/sites/batman" class="button">View Site</a>
+</p>
+</section>
+</div> 
+</article>
+
+
+
+
+
+</div> 
+<!--
+<div class="footer-container">
+  <footer class="wrapper">
+    Footer
+  </footer>
+-->
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js'></script>
+<script id="rendered-js">
+      (function ($) {
+
+  // Init SM
+  var controller = new ScrollMagic.Controller();
+
+  // get all triggers - headers of all 3 slides
+  var headers = ['#slide01 header', '#slide02 header', '#slide03 header', '#slide04 header', '#slide05 header', '#slide06 header'];
+
+  // Scene 01
+  // create scenes for each of the headers
+  headers.forEach(function (header, index) {
+
+    // number for highlighting scenes
+    var num = index + 1;
+
+    //make scene
+    var headerScene = new ScrollMagic.Scene({
+      triggerElement: header,
+      offset: -95 }).
+
+    setClassToggle('#slide0' + num, 'is-active').
+    //addIndicators().
+    addTo(controller);
+  });
+
+  // Scene 02
+  // change color of the nav for a light slide
+  var navScene = new ScrollMagic.Scene({
+    // trigger css animation when header is in the middle of the viewport
+    triggerElement: '.slide.is-light' }).
+
+  setClassToggle('nav', 'is-dark').
+  addTo(controller);
+
+
+})(jQuery);
+      //# sourceURL=pen.js
+    </script>
+</body>
+</html>
