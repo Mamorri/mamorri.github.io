@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627" role="img" aria-labelledby="title description">
+  <title id="title">Michael A. Morrison — Scientific Software &amp; Machine Learning</title>
+  <desc id="description">Navy and mint portfolio card with Michael Morrison's name and a diagram connecting machine learning, simulation, and HPC.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1.2" fill="#33434e"/></pattern>
+  </defs>
+  <rect width="1200" height="627" fill="#111c26"/>
+  <rect width="1200" height="6" fill="#b6e3ce"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <path d="M64 81h32" stroke="#b6e3ce" stroke-width="2"/>
+    <text x="112" y="87" fill="#b6e3ce" font-size="17" letter-spacing="2.2">SOFTWARE DEVELOPER &amp; TECHNICAL LEAD</text>
+    <text x="60" y="230" fill="#f1f2ef" font-size="84" font-weight="600" letter-spacing="-3">Michael A.</text>
+    <text x="60" y="324" fill="#b6e3ce" font-size="92" font-weight="600" letter-spacing="-3.5">Morrison.</text>
+    <text x="64" y="400" fill="#f1f2ef" font-size="30">Scientific software.</text>
+    <text x="64" y="444" fill="#b0bcc4" font-size="27">Machine learning · Simulation · HPC</text>
+    <path d="M64 511H1136" stroke="#33434e"/>
+    <text x="64" y="565" fill="#b6e3ce" font-size="23">mamorri.github.io</text>
+    <text x="1136" y="565" fill="#b0bcc4" font-size="17" text-anchor="end" letter-spacing="1.8">SELECTED WORK &amp; RESEARCH</text>
+    <g transform="translate(700 129)">
+      <rect width="436" height="336" fill="url(#dots)"/>
+      <g fill="none" stroke="#6e9997" stroke-width="2">
+        <path d="M218 79V119M91 119H345M91 119V160M345 119V160M91 233V275M345 233V275M91 275H345M218 275V307"/>
+      </g>
+      <g fill="#b6e3ce"><circle cx="218" cy="119" r="4"/><circle cx="218" cy="275" r="4"/></g>
+      <rect x="78" y="8" width="280" height="71" rx="5" fill="#b6e3ce"/>
+      <text x="218" y="53" fill="#111c26" font-size="26" font-weight="600" text-anchor="middle">Machine learning</text>
+      <rect x="4" y="160" width="174" height="73" rx="5" fill="#172630" stroke="#6e9997"/>
+      <rect x="258" y="160" width="174" height="73" rx="5" fill="#172630" stroke="#6e9997"/>
+      <text x="91" y="205" fill="#f1f2ef" font-size="25" text-anchor="middle">Simulation</text>
+      <text x="345" y="205" fill="#f1f2ef" font-size="25" text-anchor="middle">HPC</text>
+      <circle cx="218" cy="312" r="6" fill="#b6e3ce"/>
+    </g>
+  </g>
+</svg>
